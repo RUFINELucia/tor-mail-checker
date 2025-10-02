@@ -30,6 +30,7 @@ Vérifie si une adresse email a été compromise, en la comparant à une base de
 ```bash
 git clone https://github.com/TON_COMPTE/tor-mail-checker.git
 cd tor-mail-checker
+```
 
 2. (Optionnel) Créer un environnement virtuel et installer les dépendances :
 
