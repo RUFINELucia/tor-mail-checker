@@ -1,0 +1,15 @@
+# Base simulée .onion — données factices
+# Lignes vides et commen­taires (commençant par #) sont ignorées par le script.
+
+alice@example.onion
+bob@leaked.onion
+test@leaked.onion
+user123@sample.onion
+victim.one@darkweb.onion
+john.doe@onionmail.onion
+no-reply@service.onion
+support@sample.onion
+demo.user@onion.example
+leaked.account+2024@onionmail.onion
+MiXeDCase@Example.Onion
+another.user@SAMPLE.ONION
