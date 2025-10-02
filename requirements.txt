@@ -1,0 +1,4 @@
+# Aucune dépendance externe requise pour la version actuelle.
+# Ajoute ici les packages si tu étends le projet, par exemple :
+# requests>=2.0.0
+# python-dotenv>=1.0.0
