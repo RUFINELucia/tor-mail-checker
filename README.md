@@ -39,6 +39,7 @@ python -m venv .venv
 source .venv/bin/activate  # sur Linux/macOS
 .\\.venv\\Scripts\\activate   # sur Windows
 pip install -r requirements.txt
+```
 
 Aucune dépendance externe n'est strictement requise pour la version fournie, mais le requirements.txt est présent pour évoluer.
 
@@ -49,16 +50,19 @@ Vérifier une adresse :
 
 ```bash
 python check_mail.py --email alice@example.onion
+```
 
 Vérifier plusieurs adresses depuis un fichier (une adresse par ligne) :
 
 ```bash
 python check_mail.py --file my_emails.txt
+```
 
 Exporter le résultat au format CSV :
 
 ```bash
 python check_mail.py --email bob@example.onion --output results.csv
+```
 
 ## Fichier de fuite simulée
 
