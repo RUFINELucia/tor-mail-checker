@@ -27,7 +27,50 @@ Vérifie si une adresse email a été compromise, en la comparant à une base de
 
 1. Cloner le dépôt :
 
-
 ```bash
 git clone https://github.com/TON_COMPTE/tor-mail-checker.git
 cd tor-mail-checker
+
+2. (Optionnel) Créer un environnement virtuel et installer les dépendances :
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # sur Linux/macOS
+.\\.venv\\Scripts\\activate   # sur Windows
+pip install -r requirements.txt
+
+Aucune dépendance externe n'est strictement requise pour la version fournie, mais le requirements.txt est présent pour évoluer.
+
+## Usage
+
+
+Vérifier une adresse :
+
+```bash
+python check_mail.py --email alice@example.onion
+
+Vérifier plusieurs adresses depuis un fichier (une adresse par ligne) :
+
+```bash
+python check_mail.py --file my_emails.txt
+
+Exporter le résultat au format CSV :
+
+```bash
+python check_mail.py --email bob@example.onion --output results.csv
+
+## Fichier de fuite simulée
+
+
+La base simulée se trouve dans leaks/onion_db.txt (fichiers factices). Tu peux ajouter ou modifier les lignes pour tester d'autres cas.
+
+## License
+
+
+MIT
+
+## Avertissements
+
+
+- Les données dans leaks/onion_db.txt sont fictives.
+- Respecte la loi et la vie privée avant d'utiliser des outils de vérification d'adresses e-mail.
